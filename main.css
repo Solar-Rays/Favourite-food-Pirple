@@ -1,0 +1,70 @@
+.ingredients-styling{
+    width: 48%;
+  }
+
+  .instructions-ingredients{
+    background-color: chocolate;
+    color:white;
+    border-radius: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 1% 3% ;
+  }
+
+  .imagestyling{
+    border-radius: 5px;
+    background: black;
+    padding:2px;
+    width: 20%;
+    height: auto;
+    box-shadow: 5px 5px 20px black;
+  }
+  .ingredients {
+    list-style-type: none;
+  }
+
+  .ingredients li:before {
+content: '🥘';
+  }
+
+  body{
+    background-color: lightskyblue;
+    background-image: url(https://i1.wp.com/www.yummymedley.com/wp-content/uploads/2017/10/Nigerian-Beans-Porridge-close-up-1.jpg?w=750&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  header{
+    text-align: center;
+    padding-bottom: 21px;
+    font:bold;
+    text-decoration: underline;
+    color: chocolate;
+  }
+  body > div{
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 0px 4% 0px 4%;
+      border: 2px solid black;
+      border-radius: 15px;
+      margin: 5% 15% 5% 15%;
+  }
+  .instructions{
+    list-style-type: lower-roman;
+  }      
+
+  .sectionflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+   
+  #main-text {
+    width: 75%;
+  }
+
+  #initial-image{
+    border-radius: 5px 5px;
+    height: 250px;
+    width: auto;
+    background: black;
+    padding: 2px;
+  }
