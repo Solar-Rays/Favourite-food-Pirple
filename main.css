@@ -1,3 +1,23 @@
+* 
+{
+ margin: 0; 
+ padding: 0%;
+}
+
+header h1{
+  padding-top: 1.4rem;
+  text-align: center;
+  padding-bottom: 21px;
+  font:bold;
+  text-decoration: underline;
+  color: chocolate;
+}
+
+.sectionflex p {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
 .ingredients-styling{
     width: 48%;
   }
@@ -23,7 +43,7 @@
   }
 
   .ingredients li:before {
-content: '🥘';
+    content: '🥘';
   }
 
   body{
@@ -33,19 +53,17 @@ content: '🥘';
     background-size: cover;
 
   }
-  header{
-    text-align: center;
-    padding-bottom: 21px;
-    font:bold;
-    text-decoration: underline;
-    color: chocolate;
-  }
+
+
   body > div{
       background-color: rgba(255, 255, 255, 0.7);
       padding: 0px 4% 0px 4%;
-      border: 2px solid black;
+      border: 1px solid dimgrey;
       border-radius: 15px;
-      margin: 5% 15% 5% 15%;
+      width: 78%;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
   }
   .instructions{
     list-style-type: lower-roman;
@@ -68,3 +86,4 @@ content: '🥘';
     background: black;
     padding: 2px;
   }
+
