@@ -4,13 +4,28 @@
  padding: 0%;
 }
 
+p {
+  font-size: 1.15rem;
+}
+
 header h1{
-  padding-top: 1.4rem;
+  padding-top: 3rem;
   text-align: center;
-  padding-bottom: 21px;
+  padding-bottom: 4rem;
   font:bold;
   text-decoration: underline;
   color: chocolate;
+}
+
+.firstsectionflex, .sectionflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+ 
+#main-text {
+  width: 75%;
+  margin-right: 2rem;
 }
 
 .sectionflex p {
@@ -18,16 +33,44 @@ header h1{
   margin-bottom: 1rem;
 }
 
+#initial-image{
+  border-radius: 5px;
+  height: 13rem;
+  width: auto;
+  background: black;
+  padding: 2px;
+}
+
+main > p {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+
+.instructions-ingredients{
+  background-color: chocolate;
+  color:white;
+  border-radius: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
 .ingredients-styling{
     width: 48%;
   }
 
-  .instructions-ingredients{
-    background-color: chocolate;
-    color:white;
-    border-radius: 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    padding: 1% 3% ;
+  .ingredients-styling h3 {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+
+  .body-par p {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+  }
+
+  .body-par img {
+    margin-bottom: 1rem;
   }
 
   .imagestyling{
@@ -38,12 +81,19 @@ header h1{
     height: auto;
     box-shadow: 5px 5px 20px black;
   }
+
   .ingredients {
     list-style-type: none;
+    margin-right: 2rem;
+  }
+
+  .ingredients li, .ingredients-styling ol li  {
+    padding-top: .5rem;
   }
 
   .ingredients li:before {
     content: '🥘';
+    margin-right: .4rem;
   }
 
   body{
@@ -53,7 +103,6 @@ header h1{
     background-size: cover;
 
   }
-
 
   body > div{
       background-color: rgba(255, 255, 255, 0.7);
@@ -68,22 +117,81 @@ header h1{
   .instructions{
     list-style-type: lower-roman;
   }      
-
-  .sectionflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-   
-  #main-text {
-    width: 75%;
+  
+  .alt-rec p {
+    padding-bottom: 1rem;
   }
 
-  #initial-image{
-    border-radius: 5px 5px;
-    height: 250px;
-    width: auto;
-    background: black;
-    padding: 2px;
+  .alt-rec ul li {
+    font-size: 1.1rem;
+    padding-bottom: .5rem;
   }
 
+  .last-sec p {
+    font-size: 1.15rem;
+    padding-top: .3rem;
+  }
+
+  .last-sec img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .unique-class1 {
+    padding-left: 1.15rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .instructions-ingredients {
+      flex-direction: column;
+    }
+
+    .ingredients-styling {
+      width: 95%;
+      padding-bottom: 1.5rem;
+    }
+
+    header h1 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    .firstsectionflex {
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    
+    .sectionflex {
+      flex-direction: column;
+      width: 90%;
+      padding: 1rem;
+    }
+
+    #main-text { 
+      width: 95%;
+      padding-bottom: 1rem;
+    }
+
+    .ingredients-styling ol {
+      padding-left: 1rem;
+    }
+
+    @media only screen and (max-width: 425px) {
+      body > div {
+        width: 98%;
+        margin: 0;
+        padding: 0 1rem 2rem 1.2rem;
+        border: none;
+        border-radius: 0;
+      }
+    }
+  }
